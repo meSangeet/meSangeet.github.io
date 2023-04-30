@@ -1,6 +1,5 @@
 html{
     box-sizing: border-box;
-    font-size:16px ;
  
  }
  *, *:before, *:after{
@@ -10,13 +9,12 @@ html{
       margin: 0;
       padding: 0;
       font-weight: normal;
-      color: black;
+      color: rgb(136, 133, 133);
  
  }
  
  body{
-  background:  white;
-  height: 2000px;
+  background:  rgb(255, 255, 255);
  }
  
  ol,ul{
@@ -47,7 +45,7 @@ html{
 
  
  .header{
-     position: relativef;
+     position: sticky;
      transition: all 0.7s;
      z-index:9;
  }
@@ -272,82 +270,40 @@ html{
 
  .home{
     margin-top: 100px;
- 
  }
  
  .hero-text{
      font-family: 'Poppins',sans-serif;
  }
+
  .title{
-     background-color: #0bce94;
+     background-color: #000000;
      font-size: 14px;
      line-height: 24px;
      padding: 10px 30px;
      border-top-left-radius: 20px;
      border-top-right-radius: 20px;
-     border-bottom-right-radius:20px ;
+     border-bottom-right-radius:20px;
      border-bottom-left-radius: 0px;
+     color: white;
  }
+
  .name{
-     font-size: 80px;
-     letter-spacing: -1px;
-      color:rgba(29, 28, 28, 0.726);
+    font-size: 3rem;
+    letter-spacing: -1px;
+    color:rgba(29, 28, 28, 0.726);
  }
 
                                              /* typewriter typing text */
 
-  .hero-text .wrapper{
-    display: flex;
+  .wrapper .static-txt{
+    color: red;
+    font-size: 3rem;
   }
- .hero-text .wrapper .static-txt{
-    color: #000000;
-    font-size: 60px;
-    font-weight: 400;
+  .dynamic-txts{
+    color: black;
+    font-size: 3rem;
   }
- .hero-text .wrapper .dynamic-txts{
-    margin-left: 15px;
-    height: 90px;
-    line-height: 90px;
-    overflow: hidden;
-  }
-  .dynamic-txts li{
-    list-style: none;
-    color: #FC6D6D;
-    font-size: 60px;
-    font-weight: 500;
-    position: relative;
-    top: 0;
-    animation: slide 12s steps(4) infinite;
-  }
-  @keyframes slide {
-    100%{
-      top: -360px;
-    }
-  }
-  .dynamic-txts li span{
-    position: relative;
-    margin: 5px 0;
-    line-height: 90px;
-  }
-  .dynamic-txts li span::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: white;
-    border-left: 2px solid #FC6D6D;
-    animation: typing 3s steps(10) infinite;
-  }
-  @keyframes typing {
-    40%, 60%{
-      left: calc(100% + 30px);
-    }
-    100%{
-      left: 0;
-    }
-  }
- 
                                    /* now proceeding further for other section in home */
 
  .designation{
